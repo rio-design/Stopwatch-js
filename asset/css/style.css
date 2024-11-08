@@ -1,0 +1,37 @@
+body {
+    background-color: #debecc;
+}
+
+.title {
+    text-align: center;
+    color: #332c2f;
+}
+
+#stopWatchPanel {
+    margin: 0 auto;
+    width: 10em;
+}
+
+.display {
+    font-weight: bold;
+    text-align: right;
+    height: 1.5em;
+    margin-bottom: .2em;
+    padding: .5em;
+    color: #de85ac;
+    background-color: #332c2f;
+}
+
+.actions {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.message {
+    text-align: center;
+    border-bottom: 1px solid #bfded0;
+}
+
+button {
+    color: #332c2f;
+}
