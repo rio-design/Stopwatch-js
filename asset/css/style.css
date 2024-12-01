@@ -1,30 +1,55 @@
 body {
-    background-color: #debecc;
+    background-color: #fff9f5;
 }
 
-.title {
+div.stopWatchBox {
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1.title {
+    margin-top: 3.125rem auto 0;
     text-align: center;
     color: #332c2f;
 }
 
 #stopWatchPanel {
-    margin: 0 auto;
-    width: 10em;
-}
-
-.display {
-    font-weight: bold;
-    text-align: right;
-    height: 1.5em;
-    margin-bottom: .2em;
-    padding: .5em;
-    color: #de85ac;
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    margin: 5.625rem auto 0;
+    padding: 3.125rem;
+    border: 3px solid #332c2f;
+    border-radius: 50%;
     background-color: #332c2f;
 }
 
-.actions {
+div.display {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27.5rem;
+    height: 27.5rem;
+    padding: .5em;
+    border: 7px solid #ccafbc;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
     text-align: center;
-    margin-bottom: 1em;
+}
+
+p.real-time {
+    margin-top: 30%;
+    font-size: 50px;
+}
+
+.actions {
+    position: relative;
+    bottom: 23.5%;
+    text-align: center;
 }
 
 .message {
@@ -33,5 +58,29 @@ body {
 }
 
 button {
+    color: #332c2f;
+}
+
+button.startButton {
+    padding: 1.875rem 3.125rem;
+    background-color: #cc5289;
+    border-radius: 20%;
+    border: none;
+}
+
+div.resetBtnBox {
+    position: relative;
+    bottom: 23%;
+    right: 15%;
+}
+
+button.reset-btn {
+    padding: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #99848d;
+}
+
+i.icon-color {
     color: #332c2f;
 }
