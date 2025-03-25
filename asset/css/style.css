@@ -57,16 +57,20 @@ p.real-time {
     border-bottom: 1px solid #995c76;
 }
 
-button {
-    color: #332c2f;
-}
-
 button.startButton {
     padding: 1.875rem 3.125rem;
     background-color: #cc5289;
     border-radius: 20%;
     border: none;
 }
+
+button.stopButton {
+    padding: 1.875rem 3.125rem;
+    background-color: #99848d;
+    border-radius: 20%;
+    border: none;
+}
+
 
 div.resetBtnBox {
     position: relative;
@@ -81,6 +85,6 @@ button.reset-btn {
     background-color: #99848d;
 }
 
-i.icon-color {
+.icon-color {
     color: #332c2f;
 }

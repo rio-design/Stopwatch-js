@@ -7,7 +7,7 @@ function stopWatch() {
         logElm.appendChild(messageElm);
     }
 
-    let displayElm = document.getElementsByClassName('display')[0];
+    let displayElm = document.querySelector("div.display p");
     let logElm = document.querySelector('.log');
     let timer = null;
 
@@ -36,6 +36,19 @@ function stopWatch() {
             addMessage('終了');
         }
     });
+
+    // ページが閉じられたりリロードされたら停止
+    // window.onunload = function () {
+    //     clearInterval(timer);
+    // }
+
+    window.onbeforeunload = function (event) {
+        event.preventDefault();  // 必須（Chrome対策）
+        event.returnValue = "";  // 空文字でダイアログを表示
+    };
+
+
 }
 
 stopWatch();
+
