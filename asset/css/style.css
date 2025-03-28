@@ -10,7 +10,7 @@ div.stopWatchBox {
 }
 
 h1.title {
-    margin-top: 3.125rem auto 0;
+    margin: 1.875rem auto 0.9375rem;
     text-align: center;
     color: #332c2f;
 }
@@ -19,8 +19,7 @@ h1.title {
     position: absolute;
     width: 30rem;
     height: 30rem;
-    margin: 5.625rem auto 0;
-    padding: 3.125rem;
+    margin: 0 auto;
     border: 3px solid #332c2f;
     border-radius: 50%;
     background-color: #332c2f;
@@ -31,8 +30,8 @@ div.display {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 27.5rem;
-    height: 27.5rem;
+    width: 23.5rem;
+    height: 23.5rem;
     padding: .5em;
     border: 7px solid #ccafbc;
     border-radius: 50%;
@@ -48,7 +47,7 @@ p.real-time {
 
 .actions {
     position: relative;
-    bottom: 23.5%;
+    bottom: 20.5%;
     text-align: center;
 }
 
@@ -64,7 +63,7 @@ button.startButton {
     border: none;
 }
 
-button.stopButton {
+button.pauseButton {
     padding: 1.875rem 3.125rem;
     background-color: #99848d;
     border-radius: 20%;
@@ -72,13 +71,13 @@ button.stopButton {
 }
 
 
-div.resetBtnBox {
+div.stopButtonBox {
     position: relative;
     bottom: 23%;
     right: 15%;
 }
 
-button.reset-btn {
+button.stopButton {
     padding: 30px;
     border-radius: 50%;
     border: none;
